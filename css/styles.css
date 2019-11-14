@@ -14,7 +14,7 @@ body {
     text-align: left;
     font-family: "Times New Roman", Times, serif;
   }
-  nav ul li a !important {
+  nav ul li a {
     float: none;
     width: 100%;
     height: 200px;
