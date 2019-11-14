@@ -8,6 +8,24 @@ body {
   font-size: 20px;
 }
 
+@media only screen and (min-width: 600px) {
+  #favanimator-body {
+    text-align: left;
+    font-family: "Times New Roman", serif;
+  }
+  nav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+
 #resume-body {
   width: 1520px;
 }
@@ -30,7 +48,8 @@ body {
 }
 
 #map {
-  height: 100%;
+  height: 700px;
+  border: yellow solid 3px;
 }
 
 h1 {
