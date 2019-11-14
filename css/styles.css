@@ -1,0 +1,111 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #FBAB7E;
+  text-align: center;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#resume-body {
+  width: 1520px;
+}
+
+#favanimator-body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+#img1 {
+  height: 400px;
+}
+
+#img2 {
+  height: 300px;
+  width: 400px;
+}
+
+h1 {
+  font-family: 'Advent Pro', sans-serif;
+}
+
+p {
+  color: #403A23;
+}
+
+li {
+  font-size: 1em;
+  color: #403A23;
+}
+
+.bullets {
+  width: 70%;
+  margin: auto;
+}
+
+.boldbullet {
+  color: #EFFF5E;
+}
+
+.resumetitle {
+  color: #FFFFFF;
+  text-align: center;
+  background-color: #8CB5FF;
+  border: black solid 1px;
+  padding: .25em;
+}
+
+.resumeheader {
+  font-size: 1.5em;
+  color: #B552FF;
+}
+
+.informaltitle {
+  color: #FFFFFF;
+  text-align: center;
+  padding: .25em;
+  background-color: #0037B3;
+  border: black solid 2px;
+  font-size: 1.5em;
+}
+
+.returntotop {
+  margin: auto;
+  width: 6em;
+  padding: .75em;
+  text-align: center;
+  background-color: #0037B3;
+  border: white solid 1px;
+  text-decoration: none;
+}
+
+.returntotop a {
+  text-decoration: none;
+  color: white;
+}
+
+.returntotop a:hover {
+  color: #FBAB7E;
+  text-decoration: underline;
+}
+
+.border {
+  border: #EFFF5E solid 1px;
+  margin: 30px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: #403A23 solid 3px;
+}
+
+.underline {
+  color: blue;
+  text-decoration: underline;
+}
