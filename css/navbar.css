@@ -17,7 +17,7 @@
 #nav-bar-list-fixed li {
   border-right: white solid 0.5px;
   float: left;
-  width: 505px;
+  width: 24.9%;
 }
 
 #nav-bar-list-fixed li:last-child {
@@ -41,7 +41,7 @@
   border-right: white solid 0.5px;
   float: left;
   margin: 0 auto;
-  width: 33.3%;
+  width: 24.5%;
 }
 
 .nav-bar-item:last-child {
