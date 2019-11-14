@@ -29,6 +29,10 @@ body {
   width: 400px;
 }
 
+#map {
+  height: 100%;
+}
+
 h1 {
   font-family: 'Advent Pro', sans-serif;
 }
