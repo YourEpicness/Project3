@@ -196,8 +196,8 @@ function initMap() {
     // to the map type control.
     var map = new google.maps.Map(document.getElementById('map'), {
         center: {
-            lat: 41.837717,
-            lng: -87.625643
+            lat: 48.8566,
+            lng: 2.3522
         },
         zoom: 13.7,
         tilt: 45,
@@ -210,26 +210,26 @@ function initMap() {
     });
 
     // Create a marker with school location
-    var schoolPosition = {
-        lat: 41.837717,
-        lng: -87.625643
+    var favoriteLocation = {
+      lat: 48.8566,
+      lng: 2.3522
     };
     var marker = new google.maps.Marker({
-        position: schoolPosition,
+        position: favoriteLocation,
         map: map,
-        title: 'My School - Illinois Tech'
+        title: 'My Favorite Location - Paris'
     });
 
     // Create an info window
     var contentString = '<div id="content">' +
         '<div id="siteNotice">' +
         '</div>' +
-        '<h1 id="firstHeading" class="firstHeading">Illinois Tech</h1>' +
+        '<h1 id="firstHeading" class="firstHeading">My Favorite Place - Paris, France</h1>' +
         '<div id="bodyContent">' +
-        '<p>Illinois Institute of Technology also known as Illinois Tech is a private' +
-        'technology-focused, research university, located in Chicago, offering undergraduate' +
-        ' and graduate degrees in engineering, science, architecture, business, design, human sciences' +
-        ' applied technology, and law. </p>'
+        '<p>It is my favorite places to visit' +
+        ' as I have a lot of family there and love the food.' +
+        ' It is also one of the few places where I can eat authentic French pastries' +
+        ' for breakfast.</p>'
     '</div>' +
     '</div>';
 
@@ -245,4 +245,31 @@ function initMap() {
     //Associate the styled map with the MapTypeId and set it to display.
     map.mapTypes.set('styled_map', styledMapType);
     map.setMapTypeId('styled_map');
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
